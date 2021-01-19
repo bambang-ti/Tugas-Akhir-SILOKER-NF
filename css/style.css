@@ -1,0 +1,139 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* navigasi */
+.navbar {
+  background-color: #c1e6ff;
+}
+
+.judul {
+  margin: 120px 0 50px 0;
+  text-align: center;
+}
+
+.judul2 {
+  text-align: center;
+}
+
+/* search form */
+.fas {
+  cursor: pointer;
+}
+
+.login {
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* judul */
+.col-md-12 h2 {
+  text-align: center;
+  margin: 40px 0 40px 0;
+}
+/* berita terbaru */
+.news {
+  display: flex;
+  flex-direction: row;
+}
+
+.news p {
+  margin-left: 20px;
+}
+
+/* login  */
+.eye span {
+  font-size: 15px;
+  position: absolute;
+  bottom: 46px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.modal-footer .btn {
+  border: 1px solid #000000;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar-toggler {
+  float: left;
+}
+
+/* footer */
+footer {
+  background-color: #0e3854;
+  margin-top: 40px;
+  color: #fff;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1000px) {
+  .navbar-nav a {
+    font-size: 10px;
+    padding-top: 13px;
+  }
+  .nav-item {
+    margin: 0 -10px 0 -1px;
+  }
+  .judul {
+    font-size: 25px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  main {
+    font-size: 11px;
+  }
+  main h3 {
+    font-size: 19px;
+  }
+  .news img {
+    width: 100px;
+    height: 110px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-nav a {
+    font-size: 12px;
+    padding-top: 11px;
+  }
+  .judul {
+    font-size: 20px;
+  }
+  footer p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .judul {
+    font-size: 15px;
+  }
+  footer {
+    margin-top: 15px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .collapse {
+    text-align: end;
+  }
+  .col-md-3 {
+    margin: 50px 100px;
+  }
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

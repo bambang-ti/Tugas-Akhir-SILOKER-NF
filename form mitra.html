@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SILOKERNF | Sistem Informasi Lowongan Kerja NF</title>
+
+    <meta
+      name="description"
+      content="Source code generated using layoutit.com"
+    />
+    <meta name="author" content="LayoutIt!" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="navbar.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- header  -->
+      <div class="row">
+        <div class="col-md-12">
+          <!-- navigasi -->
+          <nav class="nav">
+            <div class="logo">
+              <a href="" class="navbar-brand">SILOKERNF</a>
+            </div>
+            <div class="hamburger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+              <li>
+                <form
+                  class="form-inline d-flex justify-content-center md-form form-sm"
+                >
+                  <input
+                    class="form-control form-control-sm mr-3 w-75"
+                    type="text"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <i class="fas fa-search" aria-hidden="true"></i>
+                </form>
+              </li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="lowonganbaru.html">Lowongan Baru</a></li>
+              <li><a href="isiLoker.html">Isi Loker</a></li>
+              <li><a href="daftar mitra.html">Daftar Mitra</a></li>
+              <li><a href="berita.html">Berita</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <button
+                  class="login-button"
+                  href="dashboardAdmin.html"
+                  data-toggle="modal"
+                  data-target="#modalLoginForm"
+                >
+                  Login
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- login -->
+      <div
+        class="modal fade"
+        id="modalLoginForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">Log In</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5 form">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input
+                  type="email"
+                  id="defaultForm-email"
+                  class="form-control"
+                  placeholder="Username/Email"
+                />
+              </div>
+
+              <div class="md-form mb-4 eye">
+                <i class="fas fa-lock prefix grey-text"></i>
+                <input
+                  type="password"
+                  id="defaultForm-pass"
+                  class="form-control"
+                  placeholder="Password"
+                />
+                <span>
+                  <i class="far fa-eye span"></i>
+                </span>
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-default" id="log" onclick="login()">
+                <a href="dashboardAdmin.html">Log In</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <!-- judul -->
+      <h2 class="judul">Sistem Informasi Lowongan Kerja NF - SILOKERNF</h2>
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-end">
+          <nav>
+            <ol class="breadcrumb" style="background-color: transparent;">
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="daftar mitra.html">Daftar Mitra</a>
+              </li>
+              <li class="breadcrumb-item active">
+                Form Daftar Mitra
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      </form>
+      <fieldset>
+        <legend>Form Daftar Mitra</legend>
+        <div class="row mb-2">
+          <label class="col-sm-2 col-form-label col-form-label-sm">Nama Perusahaan/Organisasi</label>
+          <div class="col-sm-9">
+            <input id="text" name="text" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="row mb-2">
+          <label class="col-sm-2 col-form-label col-form-label-sm">Bidang Usaha</label>
+          <div class="col-sm-2">
+            <select id="select" name="select" class="custom-select" required="required">
+              <option value="perbankan">Perbankan</option>
+              <option value="pelatihan">Pelatihan</option>
+              <option value="property">Property</option>
+              <option value="edukasi">Edukasi</option>
+              <option value="hotel">Hotel</option>
+              <option value="teknologi">Teknologi</option> 
+            </select>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <label class="col-sm-2 col-form-label col-form-label-sm">Alamat Kantor</label>
+          <div class="col-sm-9">
+            <textarea id="textarea" name="textarea" cols="40" rows="3" class="form-control" required="required"></textarea>
+          </div>            
+        </div>
+        <div class="row mb-2">
+          <label class="col-sm-2 col-form-label col-form-label-sm">Kontak Person</label>
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+            <i class="fa fa-phone"></i>
+            </div>
+          </div> 
+          <div class="col-sm-4">
+            <input id="text1" name="text1" type="text" required="required" class="form-control">
+          </div>
+        </div>
+        <div class="row mb-2">
+          <label class="col-sm-2 col-form-label col-form-label-sm">No. HP/Telepon</label>
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+            <i class="fa fa-phone-square"></i>
+            </div>
+        </div> 
+          <div class="col-sm-4">
+            <input id="number" name="number" placeholder="08xxxxxx" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="row mb-2">
+          <label class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+            <i class="fa fa-at"></i>
+            </div>
+        </div> 
+          <div class="col-sm-4">
+            <input id="email" name="email" placeholder="@gmail.com" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="row mb-2">
+          <label class="col-sm-2 col-form-label col-form-label-sm">Alamat Web</label>
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+            <i class="fa fa-external-link"></i>
+            </div>
+        </div> 
+          <div class="col-sm-5">
+            <input id="text2" name="text2" placeholder="http://" type="text" class="form-control">
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Daftar</button>
+          <button type="submit" class="btn btn-primary">Batal</button>
+        </div>
+      </fieldset>
+      </form>
+    
+     
+               
+            
+      <!-- Footer -->
+      <footer class="page-footer font-small blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          <p>© 2021 Copyright: Develop by Mahasiswa STTNF</p>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
