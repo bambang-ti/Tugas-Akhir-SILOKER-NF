@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title>SILOKERNF | Sistem Informasi Lowongan Kerja NF</title>
 
     <meta
@@ -26,6 +25,7 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    
   </head>
   <body>
     <div class="container-fluid">
@@ -146,73 +146,47 @@
             </nav>
           </div>
         </div>
-
+        
         <form>
-          <fieldset>
-            <legend class="judul">Isi Penawaran Lowongan Kerja</legend>
-            <table>
-              <div>
-                <tr>
-                  <td>Nama Perusahaan/Organisasi</td>
-                  <td>:</td>
-                  <td><input type="text" name="Nama Lengkap" size="30" /></td>
-                </tr>
+          <div class="form-group row">
+            <label for="text1" class="col-4 col-form-label">Nama Perusahaan/Organisasi</label> 
+            <div class="col-8">
+              <div class="input-group">
+                <input id="text1" name="text1" type="text" class="form-control">
               </div>
-
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-4 col-form-label" for="select">Bidang Usaha</label> 
+            <div class="col-8">
+              <select id="select" name="select" class="custom-select">
+                <option value="Pilih">Pilih</option>
+                <option value="Pelatihan">Pelatihan</option>
+                <option value="Teknologi">Teknologi</option>
+                <option value="Property">Property</option>
+                <option value="Edukasi">Edukasi</option>
+                <option value="Hotel">Hotel</option>
+                <option value="Perbankan">Perbankan</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="textarea" class="col-4 col-form-label">Deskripsi Lowongan</label> 
+            <div class="col-8">
+              <textarea id="textarea" name="textarea" cols="40" rows="7" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="textarea1" class="col-4 col-form-label">Deskripsi Kualifikasi Lowongan</label> 
+            <div class="col-8">
+              <textarea id="textarea1" name="textarea1" cols="40" rows="7" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="checkbox" class="col-4">Kategori Lowongan</label> 
+            <div class="col-8">
               <div>
                 <tr>
-                  <td><label for="cars">Bidang Usaha</label></td>
-                  <td>:</td>
-                  <td>
-                    <select name="pekerjaan">
-                      <option value="">Pilih..</option>
-                      <option value="perbankan">Perbankan</option>
-                      <option value="pelatihan">Pelatihan</option>
-                      <option value="property">Property</option>
-                      <option value="edukasi">Edukasi</option>
-                      <option value="hotel">Hotel</option>
-                      <option value="teknologi">Teknologi</option>
-                    </select>
-                  </td>
-                </tr>
-              </div>
-
-              <div>
-                <tr>
-                  <td valign="top">Deskripsi Lowongan</td>
-                  <td valign="top">:</td>
-                  <td valign="top" colspan="3">
-                    <textarea
-                      name="alamat"
-                      id="alamat"
-                      class="form"
-                      cols="40"
-                      rows="4"
-                    ></textarea>
-                  </td>
-                </tr>
-              </div>
-
-              <div>
-                <tr>
-                  <td valign="top">Deskripsi Kualifikasi Lowongan</td>
-                  <td valign="top">:</td>
-                  <td valign="top" colspan="3">
-                    <textarea
-                      name="alamat"
-                      id="alamat"
-                      class="form"
-                      cols="40"
-                      rows="3"
-                    ></textarea>
-                  </td>
-                </tr>
-              </div>
-
-              <div>
-                <tr>
-                  <td>Kategori Lowongan</td>
-                  <td>:</td>
                   <td>
                     <input
                       type="checkbox"
@@ -237,41 +211,30 @@
                   </td>
                 </tr>
               </div>
-
-              <div>
-                <tr>
-                  <td>Tanggal Dateline</td>
-                  <td>:</td>
-                  <td><input type="date" /></td>
-                </tr>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="tanggal" class="col-4 col-form-label">Tanggal Deadline</label> 
+            <div class="col-8">
+              <div class="input-group"> 
+                <input type="date" />
+              </div> 
+              <span id="tanggalHelpBlock" class="form-text text-muted">masukkan tanggal terakhir lowongan</span>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="email" class="col-4 col-form-label">Email</label> 
+            <div class="col-8">
+              <div class="input-group"> 
+                <input id="email" name="email" type="email" class="form-control">
               </div>
-
-              <div>
-                <tr>
-                  <td><label for="hp">Kontak person</label></td>
-                  <td>:</td>
-                  <td colspan="3">
-                    <input name="hp" type="text" />
-                  </td>
-                </tr>
-              </div>
-
-              <div>
-                <tr>
-                  <td><label for="email">Email</label></td>
-                  <td>:</td>
-                  <td colspan="3">
-                    <input name="email" type="email" />
-                  </td>
-                </tr>
-              </div>
-              <div>
-                <tr>
-                  <td><button type="submit">Submit</button></td>
-                </tr>
-              </div>
-            </table>
-          </fieldset>
+            </div>
+          </div> 
+          <div class="form-group row">
+            <div class="offset-4 col-8">
+              <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
         </form>
       </main>
 
